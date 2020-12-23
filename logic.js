@@ -10,19 +10,13 @@ function emailPhoneCheck() {
 }
 function emailValidate() {
 
-        
-        if (document.getElementById('email').checked) {
-          
+    if (document.getElementById('email').checked) {   
         var inputText=document.form1.email1.value;
         var atposition=inputText.indexOf("@");
         var dotposition=inputText.lastIndexOf(".");
-        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=inputText.length){
+    if (atposition<1 || dotposition<atposition+2 || dotposition +2>=inputText.length){
         alert("Please enter a valid e-mail address");
-        return false;
+    return false;
+            }
         }
-        }
-        else if (document.getElementById('phone').checked) {
-        var inputText=document.form1.phone1.value;
-        }
-}
-
+    }
